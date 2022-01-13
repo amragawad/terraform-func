@@ -31,9 +31,11 @@ resource "azurerm_function_app" "example" {
   app_service_plan_id        = azurerm_app_service_plan.example.id
   storage_account_name       = azurerm_storage_account.example.name
   storage_account_access_key = azurerm_storage_account.example.primary_access_key
+  version = "~4"
 
   app_settings = {
     "FUNCTIONS_WORKER_RUNTIME" = "node"
+    "WEBSITE_NODE_DEFAULT_VERSION" = "~14"
     "CLOSE_PERC" = var.CLOSE_PERC
     "CRYPT" = "ETH"
     "CURRENCY" = "EUR"
