@@ -47,5 +47,6 @@ resource "azurerm_function_app" "example" {
     "PAIR" = "ETHEUR"
     "PERC_ARRAY" = var.PERC_ARRAY
     "SLEEP_TIME" = 1000
+    "REPORT_NOTIF_LINK" = var.REPORT_NOTIF_LINK
   }
 }

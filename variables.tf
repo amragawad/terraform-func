@@ -20,3 +20,6 @@ variable "CLOSE_PERC" {
 variable "NOTIF_LINK" {
   type = string
 }
+variable "REPORT_NOTIF_LINK" {
+  type = string
+}
